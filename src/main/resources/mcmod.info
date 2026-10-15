@@ -1,0 +1,1 @@
+[{"modid":"compactreactors","name":"CompactReactors","description":"Build a compact virtual reactor in a single block.","version":"${version}","mcversion":"1.7.10","authorList":["CompactReactors"],"dependencies":["BigReactors"]}]

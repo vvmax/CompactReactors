@@ -1,0 +1,47 @@
+// Pin the official archived release: older Maven versions were removed upstream.
+buildscript { dependencies { classpath files('tools/retrofuturagradle-1.4.1.jar') } }
+plugins { id 'java-library' }
+apply plugin: 'com.gtnewhorizons.retrofuturagradle'
+group = 'dev.compactreactors'
+version = '0.4.1'
+base { archivesName = 'CompactReactors-1.7.10' }
+java { toolchain { languageVersion = JavaLanguageVersion.of(8) }; withSourcesJar() }
+minecraft { mcVersion = '1.7.10' }
+repositories {
+ exclusiveContent {
+  forRepository { maven { url = 'https://libraries.minecraft.net'; metadataSources { artifact() } } }
+  filter { includeGroup 'lzma' }
+ }
+ mavenCentral(); maven { url = 'https://nexus.gtnewhorizons.com/repository/public/' } }
+dependencies { implementation(rfg.deobf(files('libs/BigReactors-0.4.3A.jar'))); implementation(rfg.deobf(fileTree(dir:'libs', include:['CoFH*.jar']))) }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+processResources { inputs.property 'version', project.version; filesMatching('mcmod.info') { expand 'version': project.version } }
+
+
+tasks.register('layoutTest', JavaExec) {
+ dependsOn tasks.named('testClasses')
+ classpath = sourceSets.test.runtimeClasspath
+ mainClass = 'PocketLayoutTest'
+}
+tasks.named('check') { dependsOn tasks.named('layoutTest') }
+
+tasks.register('catalogTest', JavaExec) {
+ dependsOn tasks.named('testClasses')
+ classpath = sourceSets.test.runtimeClasspath
+ mainClass = 'dev.compactreactors.CatalogTest'
+}
+tasks.named('check') { dependsOn tasks.named('catalogTest') }
+
+tasks.register('shapeTest', JavaExec) {
+ dependsOn tasks.named('testClasses')
+ classpath = sourceSets.test.runtimeClasspath
+ mainClass = 'dev.compactreactors.ReactorShapeTest'
+}
+tasks.named('check') { dependsOn tasks.named('shapeTest') }
+
+tasks.register('liquidTest', JavaExec) {
+ dependsOn tasks.named('testClasses')
+ classpath = sourceSets.test.runtimeClasspath
+ mainClass = 'dev.compactreactors.LiquidTest'
+}
+tasks.named('check') { dependsOn tasks.named('liquidTest') }

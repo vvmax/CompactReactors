@@ -1,0 +1,31 @@
+Project name:
+Compact Reactors
+
+Summary:
+Build and manage real Big Reactors inside a single block with an in-game reactor layout editor.
+
+Description:
+Compact Reactors is an addon for BigReactors 0.4.3A on Minecraft 1.7.10 that lets you build a working reactor inside a single block.
+
+Open the reactor interface, place real reactor components and coolants from your inventory, and assemble your design. Fuel consumption, heat and RF generation are handled by the native Big Reactors simulation.
+
+Features:
+- Edit reactor layouts layer by layer in a graphical interface.
+- Expand the standard reactor from 5 x 5 x 5 to 7 x 7 x 7 and 9 x 9 x 9 using expansion modules.
+- Use an Advanced Compact Reactor to configure width, height and depth independently, with configurable maximum dimensions.
+- Browse coolant icons and their absorption, efficiency, moderation and conductivity values. Materials absent from your modpack are hidden.
+- Pour liquid coolants from portable tanks into multiple cells and recover the liquid later.
+- View supported structural blocks and their roles in the built-in guide.
+- Quickly dismantle a layout and return its components to your inventory.
+- Transfer RF, insert fuel and extract waste through the compact reactor block.
+
+Requirements:
+Minecraft 1.7.10, Forge 10.13.4.1614, BigReactors 0.4.3A and CoFHCore.
+Install Compact Reactors on both the client and server.
+
+Current scope:
+Passive RF reactors. Active steam cooling and turbines are not supported.
+Maximum advanced dimensions also respect the Big Reactors configuration.
+
+Development status:
+Automated build and integration checks pass. Full in-game validation is still pending.

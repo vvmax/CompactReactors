@@ -1,0 +1,10 @@
+Generator: built-in image_gen
+
+Use case: logo-brand
+Asset type: square project icon for Compact Reactors, an independent industrial voxel game addon.
+Primary request: design an original polished illustrated reactor cube emblem that stays readable at tiny thumbnail sizes.
+Subject: one chunky compact reactor machine, three-quarter isometric view, centered and filling about 78% of a square image. Thick dark gunmetal frame, beveled steel corner braces, inset front window containing three bright lime-green vertical reactor rods, subtle internal radioactive green glow. A side panel with clear cooling vents and one restrained cyan indicator. Small yellow and charcoal caution markings on two lower corner plates.
+Style/medium: crisp premium pixel-inspired voxel illustration, clean geometric edges, deliberate large forms, coherent industrial construction, strong silhouette, dimensional but not photorealistic.
+Scene/backdrop: very dark charcoal industrial panel with subtle fine texture and a subdued square inset outline, visually quiet. Soft green rim light and a restrained shadow anchor the cube.
+Composition/framing: square 1:1, balanced centered emblem, generous safe padding, no cropped corners. Clear separation from the backdrop. High contrast focal green core.
+Constraints: no text, no letters, no numbers, no watermark, no game logo, no existing mod logo, no trademarked symbols, no copied game textures, no characters, no scenery, no giant radiation sign, no visual clutter. This is original promotional artwork, not a gameplay screenshot. Opaque background.
